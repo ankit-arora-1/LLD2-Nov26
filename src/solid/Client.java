@@ -10,7 +10,7 @@ public class Client {
     public static void main(String[] args) {
         Flyable sparrow = new Sparrow();
         Flyable pigeon = new Pigeon();
-        Flyable crow = new Crow();
+        Flyable crow = new Crow(new FastFlying());
         Bird penguin = new Penguin();
 
         makeBirdFly(sparrow);

@@ -1,9 +1,15 @@
 package solid;
 
 public class Crow extends Bird implements Flyable, Swimmable {
+    FlyingSpeed flyingSpeed;
+
+    public Crow(FlyingSpeed flyingSpeed) {
+        this.flyingSpeed = flyingSpeed;
+    }
+
     @Override
     public void fly() {
-        System.out.println("Crow is flying");
+        flyingSpeed.customFly();
     }
 
     @Override
