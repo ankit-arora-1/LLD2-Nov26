@@ -17,7 +17,6 @@ public class DatabaseConnection {
 
     public static DatabaseConnection getInstance() {
 
-
             // Double locking
             if(databaseConnection == null) {
                 synchronized (DatabaseConnection.class) {
