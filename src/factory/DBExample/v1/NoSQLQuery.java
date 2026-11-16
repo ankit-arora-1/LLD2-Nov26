@@ -4,6 +4,7 @@ public class NoSQLQuery implements Query {
     private String query;
 
     public NoSQLQuery(String query) {
+        // verify if query is correct or  not
         this.query = query;
     }
 
