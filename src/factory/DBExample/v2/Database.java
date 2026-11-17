@@ -7,9 +7,9 @@ public interface Database {
 
 
     // might have other non factory methods
-    public void log();
-
-    public String getVersionNumber();
-
-    public void updateDBClient();
+//    public void log();
+//
+//    public String getVersionNumber();
+//
+//    public void updateDBClient();
 }
