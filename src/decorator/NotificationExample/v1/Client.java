@@ -6,6 +6,7 @@ public class Client {
     public static void main(String[] args) {
         // How do we add Logging notifier here? -> See v1_1
         List<Notifier> notifiers = List.of(
+                new LoggingNotifier(),
                 new EmailNotifier(),
                 new SmsNotifier()
         );

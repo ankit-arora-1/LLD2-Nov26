@@ -7,7 +7,7 @@ public class Client {
         System.out.println(order1.description());
 
 
-       Beverage order2 = new Milk(new Coffee());
+       Beverage order2 = new Coffee(new Milk(new Coffee()));
        System.out.println(order2.cost());
        System.out.println(order2.description());
 
