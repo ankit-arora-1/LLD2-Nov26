@@ -8,6 +8,6 @@ public class Sugar implements Addon {
 
     @Override
     public String description() {
-        return "Sugar";
+        return " Sugar";
     }
 }

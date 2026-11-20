@@ -11,8 +11,8 @@ public class Coffee implements Beverage {
 
     @Override
     public int cost() {
-        int totalCost = 30; // cost of coffee
-        for(Addon addon: addons) {
+        int totalCost = 30;
+        for (Addon addon : addons) {
             totalCost += addon.cost();
         }
 
@@ -21,11 +21,11 @@ public class Coffee implements Beverage {
 
     @Override
     public String description() {
-        StringBuilder finalDesc = new StringBuilder("Coffee ");
-        for(Addon addon: addons) {
-            finalDesc.append(addon.description()).append(" ");
+        String finalDesc = "Coffee";
+        for (Addon addon : addons) {
+            finalDesc += addon.description();
         }
 
-        return finalDesc.toString();
+        return finalDesc;
     }
 }

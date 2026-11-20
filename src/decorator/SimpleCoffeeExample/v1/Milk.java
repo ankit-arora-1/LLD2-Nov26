@@ -8,6 +8,6 @@ public class Milk implements Addon {
 
     @Override
     public String description() {
-        return "Milk";
+        return " Milk";
     }
 }
