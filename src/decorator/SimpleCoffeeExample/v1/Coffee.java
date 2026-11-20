@@ -16,14 +16,19 @@ public class Coffee implements Beverage {
             totalCost += addon.cost();
         }
 
+        if(totalCost > 100) {
+            // add the discount
+        }
+
         return totalCost;
     }
+
 
     @Override
     public String description() {
         String finalDesc = "Coffee";
         for (Addon addon : addons) {
-            finalDesc += addon.description();
+            finalDesc += addon.description(); // HW: Why is there a warning near "+="?
         }
 
         return finalDesc;

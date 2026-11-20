@@ -1,0 +1,13 @@
+package decorator.SimpleCoffeeExample.v1;
+
+public class Discount20 implements Addon {
+    @Override
+    public int cost(/*int currentCost*/) {
+        return 0;
+    }
+
+    @Override
+    public String description() {
+        return null;
+    }
+}
